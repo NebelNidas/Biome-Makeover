@@ -8,7 +8,6 @@ import party.lemons.biomemakeover.util.RegistryHelper;
 
 public class BMBlockEntities
 {
-	public static final BlockEntityType<PoltergeistBlockEntity> POLTERGEIST = BlockEntityType.Builder.create(PoltergeistBlockEntity::new, BMBlocks.POLTERGEIST).build(null);
 	public static final BlockEntityType<LightningBugBottleBlockEntity> LIGHTNING_BUG_BOTTLE = BlockEntityType.Builder.create(LightningBugBottleBlockEntity::new, BMBlocks.LIGHTNING_BUG_BOTTLE).build(null);
 	public static final BlockEntityType<TapestryBlockEntity> TAPESTRY = BlockEntityType.Builder.create(TapestryBlockEntity::new, BMBlocks.TAPESTRY_BLOCKS.toArray(new Block[0])).build(null);
 	public static final BlockEntityType<DirectionalDataBlockEntity> DIRECTIONAL_DATA = BlockEntityType.Builder.create(DirectionalDataBlockEntity::new, BMBlocks.DIRECTIONAL_DATA).build(null);

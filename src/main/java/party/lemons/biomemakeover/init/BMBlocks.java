@@ -84,7 +84,6 @@ public class BMBlocks
 	public static final BMBlock BARREL_CACTUS_FLOWERED = new BarrelCactusBlock(true, settings(Material.CACTUS, RLayer.CUTOUT, 0).sounds(BlockSoundGroup.WOOL).nonOpaque().breakInstantly().noCollision());
 
 	public static final BMBlock PAYDIRT = new BMBlock(settings(Material.SOIL, 1.4F).breakByTool(FabricToolTags.SHOVELS).sounds(BlockSoundGroup.GRAVEL));
-	public static final BMBlock POLTERGEIST = new PoltergeistBlock(settings(POLTERGEISTER_MATERIAL, RLayer.CUTOUT, 1.0F).luminance((bs)->bs.get(PoltergeistBlock.ENABLED) ? 7 : 0).sounds(BlockSoundGroup.LODESTONE));
 	public static final Block ECTOPLASM_COMPOSTER = new EctoplasmComposterBlock(settings(Material.WOOD, 0.6F).sounds(BlockSoundGroup.WOOD));
 
 	public static WoodTypeInfo WILLOW_WOOD_INFO = new WoodTypeInfo("willow", settings(Material.WOOD, 1.5F).sounds(BlockSoundGroup.WOOD)).all();

@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/cube_bottom_top",
-  "textures": {
-    "top": "biomemakeover:block/poltergeist_top_off",
-    "bottom": "biomemakeover:block/poltergeist_bottom",
-    "side": "biomemakeover:block/poltergeist_side_off"
-  }
-}
