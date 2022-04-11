@@ -75,7 +75,6 @@ public class BiomeMakeoverClient implements ClientModInitializer
 		ParticleFactoryRegistry.getInstance().register((ParticleType)BMEffects.BLOSSOM, BlossomParticle.Factory::new);
 
 		ColorProviderHelper.registerSimpleBlockWithItem(new FoliageBlockColorProvider(),
-		                                                BMBlocks.ANCIENT_OAK_LEAVES,
 		                                                BMBlocks.IVY
 		);
 		ColorProviderHelper.registerSimpleBlockWithItem(new StaticBlockColorProvider(0x84ab6f),

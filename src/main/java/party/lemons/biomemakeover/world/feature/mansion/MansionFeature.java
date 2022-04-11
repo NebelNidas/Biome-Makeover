@@ -437,7 +437,7 @@ public class MansionFeature extends StructureFeature<DefaultFeatureConfig>
 			//Attempt to not generate if there's a roof lol
 			BlockPos topPos = world.getTopPosition(Heightmap.Type.MOTION_BLOCKING, pos.offset(dir.getOpposite(), 2)).down();
 			BlockState topState = world.getBlockState(topPos);
-			if(topState.isOf(BMBlocks.ANCIENT_OAK_WOOD_INFO.getBlock(WoodTypeInfo.Type.SLAB)) || topState.isOf(BMBlocks.ANCIENT_OAK_WOOD_INFO.getBlock(WoodTypeInfo.Type.STAIR))) return;
+			if(topState.isOf(Blocks.DARK_OAK_SLAB) || topState.isOf(Blocks.DARK_OAK_STAIRS)) return;
 
 			int size = 3;
 			BlockPos startPos, endPos;

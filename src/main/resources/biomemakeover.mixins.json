@@ -4,6 +4,7 @@
   "package": "party.lemons.biomemakeover.mixin",
   "compatibilityLevel": "JAVA_8",
   "mixins": [
+    "DefaultedRegistryMixin",
     "NoiseChunkGeneratorMixin",
     "HugeBrownMushroomFeatureMixin",
     "MyceliumBlockMixin",

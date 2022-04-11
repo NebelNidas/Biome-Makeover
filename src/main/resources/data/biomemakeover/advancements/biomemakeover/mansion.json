@@ -2,7 +2,7 @@
   "parent": "biomemakeover:biomemakeover/root",
   "display": {
     "icon": {
-      "item": "biomemakeover:ancient_oak_log"
+      "item": "minecraft:dark_oak_log"
     },
     "title": {
       "translate": "advancements.biomemakeover.mansion.title"

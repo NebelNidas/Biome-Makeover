@@ -112,7 +112,6 @@ public class BMItems
 		ComposterBlock.ITEM_TO_LEVEL_INCREASE_CHANCE.put(BMBlocks.BLIGHTED_BALSA_LEAVES.asItem(), 0.3F);
 		ComposterBlock.ITEM_TO_LEVEL_INCREASE_CHANCE.put(BMBlocks.WILLOW_LEAVES.asItem(), 0.3F);
 		ComposterBlock.ITEM_TO_LEVEL_INCREASE_CHANCE.put(BMBlocks.SWAMP_CYPRESS_LEAVES.asItem(), 0.3F);
-		ComposterBlock.ITEM_TO_LEVEL_INCREASE_CHANCE.put(BMBlocks.ANCIENT_OAK_LEAVES.asItem(), 0.3F);
 		ComposterBlock.ITEM_TO_LEVEL_INCREASE_CHANCE.put(BMBlocks.CATTAIL.asItem(), 0.5F);
 		ComposterBlock.ITEM_TO_LEVEL_INCREASE_CHANCE.put(BMBlocks.REED.asItem(), 0.2F);
 		ComposterBlock.ITEM_TO_LEVEL_INCREASE_CHANCE.put(BMBlocks.SMALL_LILY_PAD.asItem(), 0.3F);
