@@ -22,7 +22,6 @@ import org.spongepowered.asm.mixin.injection.*;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 import party.lemons.biomemakeover.enchantments.BMEnchantment;
-import party.lemons.biomemakeover.init.BMEnchantments;
 import party.lemons.biomemakeover.util.EntityUtil;
 import party.lemons.biomemakeover.util.ItemUtil;
 import party.lemons.biomemakeover.util.NetworkUtil;
@@ -127,20 +126,6 @@ public abstract class LivingEntityMixin extends Entity implements SlideEntity, L
 	@Unique
 	private int slideTime = 0;
 
-	@Redirect(at = @At(value = "INVOKE", target = "Lnet/minecraft/block/Block;getSlipperiness()F"), method = "travel")
-	public float getSlipperiness(Block block)
-	{
-		float slipperiness = block.getSlipperiness();
-		int slipLevel = EnchantmentHelper.getLevel(BMEnchantments.SLIDING_CURSE, getEquippedStack(EquipmentSlot.FEET));
-
-		if(slipLevel <= 0 || !isSliding()) return block.getSlipperiness();
-
-		slipperiness = Math.max(0.98F, slipperiness);
-		slipperiness += (slipLevel * 0.005F);
-		slipperiness = Math.min(0.999F, slipperiness);
-		return slipperiness;
-	}
-
 	@Inject(at = @At("TAIL"), method = "tick")
 	public void tick(CallbackInfo cbi)
 	{
@@ -200,13 +185,6 @@ public abstract class LivingEntityMixin extends Entity implements SlideEntity, L
 				}
 			}
 		}
-	}
-
-	@ModifyArg(method = "handleFallDamage", at = @At(value = "INVOKE", target="Lnet/minecraft/entity/LivingEntity;computeFallDamage(FF)I"), index = 0)
-	private float changeFallDistance(float distance){
-		int fallLevel = EnchantmentHelper.getEquipmentLevel(BMEnchantments.BUCKLING_CURSE, (LivingEntity)(Object)this);
-
-		return distance + fallLevel;
 	}
 
 	@Unique

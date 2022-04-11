@@ -37,7 +37,6 @@ import net.minecraft.util.math.MathHelper;
 import net.minecraft.util.math.Vec3d;
 import net.minecraft.world.*;
 import party.lemons.biomemakeover.init.BMEffects;
-import party.lemons.biomemakeover.init.BMEnchantments;
 import party.lemons.biomemakeover.init.BMEntities;
 
 import java.util.Random;
@@ -171,7 +170,7 @@ public class DecayedEntity extends ZombieEntity
 						if(item != null)
 						{
 							ItemStack stack = new ItemStack(item);
-							stack.addEnchantment(BMEnchantments.DECAY_CURSE, 1 + random.nextInt(4));
+							// stack.addEnchantment(BMEnchantments.DECAY_CURSE, 1 + random.nextInt(4));
 							this.equipStack(equipmentSlot, stack);
 						}
 					}
@@ -180,7 +179,7 @@ public class DecayedEntity extends ZombieEntity
 		}
 
 		ItemStack shield = new ItemStack(Items.SHIELD);
-		shield.addEnchantment(BMEnchantments.DECAY_CURSE, 1 + random.nextInt(4));
+		// shield.addEnchantment(BMEnchantments.DECAY_CURSE, 1 + random.nextInt(4));
 		this.equipStack(EquipmentSlot.OFFHAND, shield);
 		return entityData;
 	}
