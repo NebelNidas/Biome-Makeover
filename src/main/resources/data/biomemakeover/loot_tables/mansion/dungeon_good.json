@@ -25,21 +25,6 @@
         },
         {
           "type": "minecraft:item",
-          "weight": 15,
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": {
-                "min": 1.0,
-                "max": 6.0,
-                "type": "minecraft:uniform"
-              }
-            }
-          ],
-          "name": "biomemakeover:crude_cladding"
-        },
-        {
-          "type": "minecraft:item",
           "weight": 8,
           "functions": [
             {
@@ -223,63 +208,6 @@
             }
           ],
           "name": "minecraft:diamond_shovel"
-        },
-        {
-          "type": "minecraft:item",
-          "weight": 6,
-          "functions": [
-            {
-              "function": "minecraft:enchant_with_levels",
-              "levels": 10,
-              "treasure": true
-            },
-            {
-              "function": "minecraft:set_damage",
-              "damage": {
-                "min": 0.75,
-                "max": 1
-              }
-            }
-          ],
-          "name": "biomemakeover:cladded_chestplate"
-        },
-        {
-          "type": "minecraft:item",
-          "weight": 6,
-          "functions": [
-            {
-              "function": "minecraft:enchant_with_levels",
-              "levels": 10,
-              "treasure": true
-            },
-            {
-              "function": "minecraft:set_damage",
-              "damage": {
-                "min": 0.75,
-                "max": 1
-              }
-            }
-          ],
-          "name": "biomemakeover:cladded_leggings"
-        },
-        {
-          "type": "minecraft:item",
-          "weight": 6,
-          "functions": [
-            {
-              "function": "minecraft:enchant_with_levels",
-              "levels": 10,
-              "treasure": true
-            },
-            {
-              "function": "minecraft:set_damage",
-              "damage": {
-                "min": 0.75,
-                "max": 1
-              }
-            }
-          ],
-          "name": "biomemakeover:cladded_boots"
         },
         {
           "type": "minecraft:item",
@@ -590,21 +518,6 @@
             }
           ],
           "name": "minecraft:iron_block"
-        },
-        {
-          "type": "minecraft:item",
-          "weight": 1,
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": {
-                "min": 1.0,
-                "max": 2.0,
-                "type": "minecraft:uniform"
-              }
-            }
-          ],
-          "name": "biomemakeover:cladded_stone"
         },
         {
           "type": "minecraft:item",

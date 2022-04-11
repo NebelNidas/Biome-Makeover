@@ -27,9 +27,6 @@ public class BMItems
 	public static final FoodComponent RAW_BULBUS_ROOT_FOOD = new FoodComponent.Builder().hunger(2).saturationModifier(0.6F).build();
 	public static final FoodComponent BULBUS_ROOT_FOOD = new FoodComponent.Builder().hunger(5).saturationModifier(0.8F).build();
 
-	public static final ArmorMaterial CLADDED_MATERIAL = new CladdedArmorMaterial();
-	public static final BMArmorItem.Builder CLADDED_ARMOR = BMArmorItem.Builder.create(CLADDED_MATERIAL).attribute("Armor Proj Res", BMEntities.ATT_PROJECTILE_RESISTANCE, 1, EntityAttributeModifier.Operation.ADDITION);
-
 	public static final MushroomStewItem GLOWSHROOM_STEW = new MushroomStewItem(settings().maxCount(1).recipeRemainder(Items.BOWL).food(GLOWSHROOM_SOUP_FOOD));
 	public static final Item GLOWFISH = new Item(settings().food(GLOWFISH_FOOD));
 	public static final Item COOKED_GLOWFISH = new Item(settings().food(COOKED_GLOWFISH_FOOD));
@@ -63,11 +60,6 @@ public class BMItems
 	public static final Item ROOTLING_SEEDS = new AliasedBlockItem(BMBlocks.ROOTLING_CROP, settings());
 	public static final Item MOTH_SCALES = new Item(settings());
 	public static final StuntPowderItem STUNT_POWDER = new StuntPowderItem(settings());
-	public static final Item CRUDE_CLADDING = new Item(settings());
-	public static final Item CLADDED_HELMET = CLADDED_ARMOR.build(EquipmentSlot.HEAD, settings());
-	public static final Item CLADDED_CHESTPLATE = CLADDED_ARMOR.build(EquipmentSlot.CHEST, settings());
-	public static final Item CLADDED_LEGGINGS = CLADDED_ARMOR.build(EquipmentSlot.LEGS, settings());
-	public static final Item CLADDED_BOOTS = CLADDED_ARMOR.build(EquipmentSlot.FEET, settings());
 	public static final Item ENCHANTED_TOTEM = new EnchantedTotemItem(settings().rarity(Rarity.EPIC).maxCount(1));
 
 	public static final BMMusicDiskItem BUTTON_MUSHROOMS_MUSIC_DISK = new BMMusicDiskItem(14, BMEffects.BUTTON_MUSHROOMS, settings().maxCount(1).rarity(Rarity.RARE));
@@ -157,54 +149,4 @@ public class BMItems
 	public static final Tag<Item> SWAMP = TagRegistry.item(BiomeMakeover.ID("swamp"));
 	public static final Tag<Item> DARK_FOREST = TagRegistry.item(BiomeMakeover.ID("dark_forest"));
 
-	private static class CladdedArmorMaterial implements ArmorMaterial
-	{
-		@Override
-		public int getDurability(EquipmentSlot slot)
-		{
-			return ArmorMaterials.IRON.getDurability(slot);
-		}
-
-		@Override
-		public int getProtectionAmount(EquipmentSlot slot)
-		{
-			return ArmorMaterials.CHAIN.getProtectionAmount(slot);
-		}
-
-		@Override
-		public int getEnchantability()
-		{
-			return 15;
-		}
-
-		@Override
-		public SoundEvent getEquipSound()
-		{
-			return ArmorMaterials.LEATHER.getEquipSound();
-		}
-
-		@Override
-		public Ingredient getRepairIngredient()
-		{
-			return ArmorMaterials.LEATHER.getRepairIngredient();
-		}
-
-		@Override
-		public String getName()
-		{
-			return "cladded";
-		}
-
-		@Override
-		public float getToughness()
-		{
-			return 0;
-		}
-
-		@Override
-		public float getKnockbackResistance()
-		{
-			return 0.07F;
-		}
-	}
 }

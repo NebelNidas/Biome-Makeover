@@ -24,9 +24,7 @@ import net.minecraft.world.gen.placer.SimpleBlockPlacer;
 import party.lemons.biomemakeover.block.SmallLilyPadBlock;
 import party.lemons.biomemakeover.entity.StoneGolemEntity;
 import party.lemons.biomemakeover.init.BMBlocks;
-import party.lemons.biomemakeover.init.BMItems;
 import party.lemons.biomemakeover.util.access.CarvedPumpkinBlockAccess;
-import party.lemons.biomemakeover.util.extensions.LootBlocker;
 
 import java.util.List;
 import java.util.Random;
@@ -38,7 +36,7 @@ public final class BMWorldEvents
 
 	public static BlockPattern getStoneGolemDispenserPattern() {
 		if (stoneGolemDispenserPattern == null) {
-			stoneGolemDispenserPattern = BlockPatternBuilder.start().aisle("~ ~", "###", "~#~").where('#', CachedBlockPosition.matchesBlockState(BlockStatePredicate.forBlock(BMBlocks.CLADDED_STONE))).where('~', CachedBlockPosition.matchesBlockState(MaterialPredicate.create(Material.AIR))).build();
+			stoneGolemDispenserPattern = BlockPatternBuilder.start().aisle("~ ~", "###", "~#~").where('#', CachedBlockPosition.matchesBlockState(BlockStatePredicate.forBlock(Blocks.SMOOTH_STONE))).where('~', CachedBlockPosition.matchesBlockState(MaterialPredicate.create(Material.AIR))).build();
 		}
 
 		return stoneGolemDispenserPattern;
@@ -46,7 +44,7 @@ public final class BMWorldEvents
 
 	public static BlockPattern getStoneGolemPattern() {
 		if (stoneGolemPattern == null) {
-			stoneGolemPattern = BlockPatternBuilder.start().aisle("~^~", "###", "~#~").where('^', CachedBlockPosition.matchesBlockState(((CarvedPumpkinBlockAccess)Blocks.CARVED_PUMPKIN).bm_isGolemHeadBlock())).where('#', CachedBlockPosition.matchesBlockState(BlockStatePredicate.forBlock(BMBlocks.CLADDED_STONE))).where('~', CachedBlockPosition.matchesBlockState(MaterialPredicate.create(Material.AIR))).build();
+			stoneGolemPattern = BlockPatternBuilder.start().aisle("~^~", "###", "~#~").where('^', CachedBlockPosition.matchesBlockState(((CarvedPumpkinBlockAccess)Blocks.CARVED_PUMPKIN).bm_isGolemHeadBlock())).where('#', CachedBlockPosition.matchesBlockState(BlockStatePredicate.forBlock(Blocks.SMOOTH_STONE))).where('~', CachedBlockPosition.matchesBlockState(MaterialPredicate.create(Material.AIR))).build();
 		}
 
 		return stoneGolemPattern;

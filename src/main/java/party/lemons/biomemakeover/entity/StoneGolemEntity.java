@@ -3,6 +3,7 @@ package party.lemons.biomemakeover.entity;
 import com.google.common.collect.Lists;
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
+import net.minecraft.block.Blocks;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.entity.*;
 import net.minecraft.entity.ai.Durations;
@@ -44,7 +45,6 @@ import net.minecraft.world.World;
 import org.jetbrains.annotations.Nullable;
 import party.lemons.biomemakeover.entity.ai.BetterCrossbowAttackGoal;
 import party.lemons.biomemakeover.entity.ai.EmptyMobNavigation;
-import party.lemons.biomemakeover.init.BMBlocks;
 import party.lemons.biomemakeover.init.BMCriterion;
 import party.lemons.biomemakeover.init.BMEffects;
 import party.lemons.biomemakeover.init.BMEntities;
@@ -128,7 +128,7 @@ public class StoneGolemEntity extends GolemEntity implements CrossbowUser, Anger
 		{
 			ItemStack playerStack = player.getStackInHand(hand);
 
-			if(!playerStack.isEmpty() && playerStack.getItem() == BMBlocks.CLADDED_STONE.asItem())
+			if(!playerStack.isEmpty() && playerStack.getItem() == Blocks.SMOOTH_STONE.asItem())
 			{
 				float currentHealth = this.getHealth();
 				this.heal(15.0F);
@@ -287,7 +287,7 @@ public class StoneGolemEntity extends GolemEntity implements CrossbowUser, Anger
 	@Override
 	protected float getActiveEyeHeight(EntityPose pose, EntityDimensions dimensions)
 	{
-		return 2F;
+		return 2.1F;
 	}
 
 	@Override
