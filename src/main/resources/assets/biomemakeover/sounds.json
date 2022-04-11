@@ -596,38 +596,6 @@
       "biomemakeover:rootling_hurt_2"
     ]
   },
-  "illunite_break": {
-    "sounds": [
-      "biomemakeover:illunite_broken_1",
-      "biomemakeover:illunite_broken_2",
-      "biomemakeover:illunite_broken_3",
-      "biomemakeover:illunite_broken_4"
-    ]
-  },
-  "illunite_hit": {
-    "sounds": [
-      "biomemakeover:illunite_breaking_1",
-      "biomemakeover:illunite_breaking_2",
-      "biomemakeover:illunite_breaking_3",
-      "biomemakeover:illunite_breaking_4"
-    ]
-  },
-  "illunite_place": {
-    "sounds": [
-      "biomemakeover:illunite_placed_1",
-      "biomemakeover:illunite_placed_2",
-      "biomemakeover:illunite_placed_3",
-      "biomemakeover:illunite_placed_4"
-    ]
-  },
-  "illunite_step": {
-    "sounds": [
-      "biomemakeover:illunite_step_1",
-      "biomemakeover:illunite_step_2",
-      "biomemakeover:illunite_step_3",
-      "biomemakeover:illunite_step_4"
-    ]
-  },
   "stone_golem_turn": {
     "sounds": [
       "biomemakeover:stone_golem_turn"

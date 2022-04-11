@@ -73,23 +73,6 @@ public final class BMWorldEvents
 				}
 			}
 		});
-
-		//Adjudicator Drop Illunite Shard
-		ServerEntityCombatEvents.AFTER_KILLED_OTHER_ENTITY.register(
-				(world, entity, killedEntity)->
-                {
-					if(!world.isClient() && entity instanceof PlayerEntity && killedEntity instanceof EvokerEntity)
-					{
-						if(!LootBlocker.isBlocked(killedEntity))
-						{
-							if(world.random.nextFloat() < 0.15F)
-							{
-								killedEntity.dropStack(new ItemStack(BMItems.ILLUNITE_SHARD, 1 + world.random.nextInt(2)));
-							}
-						}
-					}
-                }
-        );
 	}
 
 	public static void handleSwampBoneMeal(World world, BlockPos pos, Random random)

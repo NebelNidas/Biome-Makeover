@@ -25,21 +25,6 @@
         },
         {
           "type": "minecraft:item",
-          "weight": 12,
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": {
-                "min": 1.0,
-                "max": 6.0,
-                "type": "minecraft:uniform"
-              }
-            }
-          ],
-          "name": "biomemakeover:illunite_shard"
-        },
-        {
-          "type": "minecraft:item",
           "weight": 15,
           "functions": [
             {

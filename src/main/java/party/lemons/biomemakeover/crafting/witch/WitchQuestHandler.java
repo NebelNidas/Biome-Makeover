@@ -47,7 +47,6 @@ public class WitchQuestHandler
 
 		addQuestItem(QuestCategory.DARK_FOREST, QuestItem.of(BMItems.MOTH_SCALES, 5, 6));
 		addQuestItem(QuestCategory.DARK_FOREST, QuestItem.of(BMItems.BULBUS_ROOT, 5, 5));
-		addQuestItem(QuestCategory.DARK_FOREST, QuestItem.of(BMItems.ILLUNITE_SHARD, 10, 2));
 		addQuestItem(QuestCategory.DARK_FOREST, QuestItem.of(BMBlocks.IVY, 3, 10));
 		addQuestItem(QuestCategory.DARK_FOREST, QuestItem.of(BMBlocks.MOTH_BLOSSOM, 10, 2));
 

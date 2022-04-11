@@ -1,7 +1,6 @@
 {
   "replace": false,
   "values": [
-    "biomemakeover:illunite_cluster",
     "biomemakeover:ancient_oak_leaves",
     "biomemakeover:ancient_oak_log",
     "biomemakeover:ancient_oak_planks",
@@ -21,7 +20,6 @@
     "biomemakeover:ancient_oak_sign",
     "biomemakeover:ancient_oak_wood",
     "biomemakeover:stripped_ancient_oak_wood",
-    "biomemakeover:illunite_shard",
     "biomemakeover:ivy",
     "biomemakeover:itching_ivy",
     "biomemakeover:moth_blossom",
@@ -51,7 +49,6 @@
     "biomemakeover:brown_petals",
     "biomemakeover:rootling_seeds",
     "biomemakeover:stunt_powder",
-    "biomemakeover:illunite_block",
     "biomemakeover:owl_spawn_egg",
     "biomemakeover:rootling_spawn_egg",
     "biomemakeover:moth_spawn_egg",

@@ -3,9 +3,6 @@
   "group": "planks",
   "ingredients": [
     {
-      "item": "biomemakeover:illunite_shard"
-    },
-    {
       "item": "biomemakeover:bulbus_root"
     }
   ],

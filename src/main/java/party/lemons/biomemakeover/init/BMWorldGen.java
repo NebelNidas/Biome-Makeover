@@ -195,7 +195,6 @@ public class BMWorldGen
 	public static final GrassPatchFeature UNDERGROUND_MYCELIUM = new GrassPatchFeature(GrassPatchFeatureConfig.CODEC);
 	public static final OrangeMushroomFeature ORANGE_MUSHROOM_FEATURE = new OrangeMushroomFeature(ProbabilityConfig.CODEC);
 
-	public static final Feature<OreFeatureConfig> ILLUNITE_UNDERGROUND_FEATURE = new IlluniteUndergroundFeature(OreFeatureConfig.CODEC);
 	public static final Feature<DefaultFeatureConfig> ITCHING_IVY_FEATURE = new ItchingIvyFeature(DefaultFeatureConfig.CODEC);
 	public static final ConfiguredFeature<?, ?> ITCHING_IVY = ITCHING_IVY_FEATURE.configure(DefaultFeatureConfig.INSTANCE).decorate(ConfiguredFeatures.Decorators.SQUARE_HEIGHTMAP).applyChance(4);
 

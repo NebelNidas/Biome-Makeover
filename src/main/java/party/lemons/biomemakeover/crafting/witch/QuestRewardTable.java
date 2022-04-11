@@ -50,8 +50,7 @@ public enum QuestRewardTable
 				new ItemStackRewardItem(new ItemStack(Items.LAPIS_LAZULI), 1, 10),
 				new ItemStackRewardItem(new ItemStack(Blocks.BROWN_MUSHROOM), 3, 5),
 				new ItemStackRewardItem(new ItemStack(Blocks.RED_MUSHROOM), 3, 5),
-				new ItemStackRewardItem(new ItemStack(Blocks.CAULDRON), 1, 5),
-				new ItemStackRewardItem(new ItemStack(BMItems.ILLUNITE_SHARD), 1, 10)
+				new ItemStackRewardItem(new ItemStack(Blocks.CAULDRON), 1, 5)
 		);
 	}
 

@@ -60,7 +60,6 @@ public class BMItems
 	public static final Item WART = new Item(settings());
 	public static final Item SOUL_EMBERS = new Item(settings());
 
-	public static final Item ILLUNITE_SHARD = new Item(settings());
 	public static final Item ROOTLING_SEEDS = new AliasedBlockItem(BMBlocks.ROOTLING_CROP, settings());
 	public static final Item MOTH_SCALES = new Item(settings());
 	public static final StuntPowderItem STUNT_POWDER = new StuntPowderItem(settings());
@@ -152,8 +151,6 @@ public class BMItems
 	{
 		return new Item.Settings().group(BiomeMakeover.GROUP);
 	}
-
-	public static final Tag<Item> CURSE_FUEL = TagRegistry.item(BiomeMakeover.ID("curse_fuel"));
 
 	public static final Tag<Item> MUSHROOM_FIELDS = TagRegistry.item(BiomeMakeover.ID("mushroom_fields"));
 	public static final Tag<Item> BADLANDS = TagRegistry.item(BiomeMakeover.ID("badlands"));
