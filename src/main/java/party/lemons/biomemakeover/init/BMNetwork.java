@@ -39,7 +39,6 @@ public class BMNetwork
 		ClientPlayNetworking.registerGlobalReceiver(ENTITY_PARTICLE_CENTERED, new S2C_DoEntityParticleCentered());
 		ClientPlayNetworking.registerGlobalReceiver(SPAWN_ENDER_PARTICLES, new S2C_DoEnderParticles());
 		ClientPlayNetworking.registerGlobalReceiver(SPAWN_BLOCK_ENDER_PARTICLES, new S2C_DoBlockEnderParticles());
-		ClientPlayNetworking.registerGlobalReceiver(BM_EVENT, new S2C_BMEvent());
 	}
 
 	public static void initCommon()

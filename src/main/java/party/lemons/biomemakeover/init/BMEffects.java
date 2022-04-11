@@ -74,7 +74,6 @@ public class BMEffects
 	public static final SoundEvent ADJUDICATOR_IDLE = new SoundEvent(BiomeMakeover.ID("adjudicator_idle"));
 	public static final SoundEvent ADJUDICATOR_LAUGH = new SoundEvent(BiomeMakeover.ID("adjudicator_laugh"));
 	public static final SoundEvent ADJUDICATOR_NO = new SoundEvent(BiomeMakeover.ID("adjudicator_no"));
-	public static final SoundEvent ALTAR_CURSING = new SoundEvent(BiomeMakeover.ID("altar_cursing"));
 	public static final SoundEvent OWL_DEATH = new SoundEvent(BiomeMakeover.ID("owl_death"));
 	public static final SoundEvent OWL_IDLE = new SoundEvent(BiomeMakeover.ID("owl_idle"));
 	public static final SoundEvent OWL_HURT = new SoundEvent(BiomeMakeover.ID("owl_hurt"));

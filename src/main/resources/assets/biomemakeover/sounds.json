@@ -731,11 +731,6 @@
     ],
     "subtitle": "subtitles.biomemakeover.adjudicator_no"
   },
-  "altar_cursing": {
-    "sounds": [
-      "biomemakeover:altar_cursing"
-    ]
-  },
   "owl_death": {
     "sounds": [
       "biomemakeover:owl/owl_death_1",

@@ -11,12 +11,10 @@ import net.minecraft.block.Blocks;
 import net.minecraft.client.render.entity.FlyingItemEntityRenderer;
 import net.minecraft.particle.ParticleType;
 import net.minecraft.util.TypedActionResult;
-import party.lemons.biomemakeover.block.blockentity.render.AltarBlockEntityRenderer;
 import party.lemons.biomemakeover.block.blockentity.render.LightningBugBottleBlockRenderer;
 import party.lemons.biomemakeover.block.blockentity.render.TapestryBlockEntityRenderer;
 import party.lemons.biomemakeover.crafting.witch.screen.WitchScreen;
 import party.lemons.biomemakeover.entity.render.*;
-import party.lemons.biomemakeover.gui.AltarScreen;
 import party.lemons.biomemakeover.gui.DirectionalDataScreen;
 import party.lemons.biomemakeover.init.*;
 import party.lemons.biomemakeover.util.DebugUtil;
@@ -63,12 +61,10 @@ public class BiomeMakeoverClient implements ClientModInitializer
 
 		BlockEntityRendererRegistry.INSTANCE.register(BMBlockEntities.LIGHTNING_BUG_BOTTLE, LightningBugBottleBlockRenderer::new
 		);
-		BlockEntityRendererRegistry.INSTANCE.register(BMBlockEntities.ALTAR, AltarBlockEntityRenderer::new);
 		BlockEntityRendererRegistry.INSTANCE.register(BMBlockEntities.TAPESTRY, TapestryBlockEntityRenderer::new
 		);
 
 		ScreenRegistry.register(BMScreens.WITCH, WitchScreen::new);
-		ScreenRegistry.register(BMScreens.ALTAR, AltarScreen::new);
 		ScreenRegistry.register(BMScreens.DIRECTIONAL_DATA, DirectionalDataScreen::new);
 
 		BMNetwork.initClient();
