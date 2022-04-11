@@ -81,10 +81,8 @@ public class BMWorldGen
 			}
 		});
 
-		BiomeModifications.addFeature(DARK_FOREST, LOCAL_MODIFICATIONS, rk(MESMERITE_BOULDER));
 		BiomeModifications.addFeature(DARK_FOREST, UNDERGROUND_DECORATION, rk(ANCIENT_OAK_TREES));
 		BiomeModifications.addFeature(DARK_FOREST, UNDERGROUND_DECORATION, rk(SMALL_DARK_OAK_TREES));
-		BiomeModifications.addFeature(DARK_FOREST, UNDERGROUND_ORES, rk(MESMERITE_UNDERGROUND));
 		BiomeModifications.addFeature(DARK_FOREST, TOP_LAYER_MODIFICATION, rk(ITCHING_IVY));
 		BiomeModifications.addFeature(DARK_FOREST, TOP_LAYER_MODIFICATION, rk(WILD_MUSHROOMS));
 		BiomeModifications.addFeature(DARK_FOREST, TOP_LAYER_MODIFICATION, rk(ConfiguredFeatures.PATCH_GRASS_BADLANDS));
@@ -198,9 +196,6 @@ public class BMWorldGen
 	public static final OrangeMushroomFeature ORANGE_MUSHROOM_FEATURE = new OrangeMushroomFeature(ProbabilityConfig.CODEC);
 
 	public static final Feature<OreFeatureConfig> ILLUNITE_UNDERGROUND_FEATURE = new IlluniteUndergroundFeature(OreFeatureConfig.CODEC);
-	public static final ConfiguredFeature<?, ?> MESMERITE_UNDERGROUND = ILLUNITE_UNDERGROUND_FEATURE.configure(new OreFeatureConfig(OreFeatureConfig.Rules.BASE_STONE_OVERWORLD, BMBlocks.MESMERITE.getDefaultState(), 33)).rangeOf(60).spreadHorizontally().repeat(6);
-	public static final Feature<SingleStateFeatureConfig> MESMERITE_BOULDER_FEATURE = new MesermiteBoulderFeature(SingleStateFeatureConfig.CODEC);
-	public static final ConfiguredFeature<?, ?> MESMERITE_BOULDER = MESMERITE_BOULDER_FEATURE.configure(new SingleStateFeatureConfig(BMBlocks.MESMERITE.getDefaultState())).decorate(ConfiguredFeatures.Decorators.SQUARE_HEIGHTMAP).applyChance(10);
 	public static final Feature<DefaultFeatureConfig> ITCHING_IVY_FEATURE = new ItchingIvyFeature(DefaultFeatureConfig.CODEC);
 	public static final ConfiguredFeature<?, ?> ITCHING_IVY = ITCHING_IVY_FEATURE.configure(DefaultFeatureConfig.INSTANCE).decorate(ConfiguredFeatures.Decorators.SQUARE_HEIGHTMAP).applyChance(4);
 

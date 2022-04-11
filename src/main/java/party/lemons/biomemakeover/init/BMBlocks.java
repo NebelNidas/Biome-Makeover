@@ -117,10 +117,6 @@ public class BMBlocks
 
 	public static final IlluniteClusterBlock ILLUNITE_CLUSTER = new IlluniteClusterBlock(settings(Material.STONE, RLayer.CUTOUT, 0.5F).sounds(ILLUNITE_SOUNDS).nonOpaque().noCollision().postProcess(BMBlocks::always).emissiveLighting(BMBlocks::always));
 	public static final Block ILLUNITE_BLOCK = new BMBlock(settings(Material.STONE, 1.5F).requiresTool().sounds(ILLUNITE_SOUNDS));
-	public static final Block MESMERITE = new BMBlock(settings(Material.STONE, 1.5F));
-	public static final DecorationBlockInfo MESMERITE_DECORATION = new DecorationBlockInfo("mesmerite", MESMERITE, settings(Material.STONE, 1.5F)).all();
-	public static final Block POLISHED_MESMERITE = new BMBlock(settings(Material.STONE, 1.5F));
-	public static final DecorationBlockInfo POLISHED_MESMERITE_DECORATION = new DecorationBlockInfo("polished_mesmerite", POLISHED_MESMERITE, settings(Material.STONE, 1.5F)).all();
 	public static WoodTypeInfo ANCIENT_OAK_WOOD_INFO = new WoodTypeInfo("ancient_oak", settings(Material.WOOD, 1.5F).sounds(BlockSoundGroup.WOOD)).all();
 	public static final BMSaplingBlock ANCIENT_OAK_SAPLING = new BMSaplingBlock(new AncientOakSaplingGenerator(), settings(Material.PLANT, RLayer.CUTOUT, 0).noCollision().ticksRandomly().breakInstantly().sounds(BlockSoundGroup.GRASS));
 	public static final BMLeavesBlock ANCIENT_OAK_LEAVES = new BMLeavesBlock(settings(Material.LEAVES, RLayer.CUTOUT_MIPPED, 0.2F).ticksRandomly().sounds(BlockSoundGroup.GRASS).nonOpaque().allowsSpawning(BMBlocks::canSpawnOnLeaves).suffocates((a, b, c)->false).blockVision((a, b, c)->false));
@@ -202,8 +198,6 @@ public class BMBlocks
 		DRIED_PEAT_BRICKS_DECORATION.register();
 		MOSSY_DRIED_PEAT_BRICKS_DECORATION.register();
 		CRACKED_DRIED_PEAT_BRICKS_DECORATION.register();
-		MESMERITE_DECORATION.register();
-		POLISHED_MESMERITE_DECORATION.register();
 
         /* Terracotta Bricks */
 		Map<DyeColor, Block> vanillaTerracotta = Maps.newHashMap();
